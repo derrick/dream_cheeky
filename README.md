@@ -25,7 +25,7 @@ end
 
 ```ruby
 require 'dream_cheeky'
-require 'watir-webdriver
+require 'watir-webdriver'
 
 DreamCheeky::BigRedButton.run do
   browser = Watir::Browser.new
