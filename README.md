@@ -43,3 +43,8 @@ DreamCheeky::BigRedButton.run do
   end
 end
 ```
+
+## Requirements
+
+1. A Dream Cheeky Big Red Button(TM).  Don't have one?  http://dreamcheeky.com/big-red-button
+2. Mac OS X with Developer Tools installed. (Support for Linux and Windows is planned).
