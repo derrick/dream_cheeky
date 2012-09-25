@@ -29,12 +29,12 @@ static VALUE get_current_state(VALUE self)
 
   Data_Get_Struct(self, hid_device, handle);
 
-	// Set up the command buffer.
-	memset(buf,0x00,sizeof(buf));
-	buf[0] = 0x08;
-	buf[7] = 0x02;
+  // Set up the command buffer.
+  memset(buf,0x00,sizeof(buf));
+  buf[0] = 0x08;
+  buf[7] = 0x02;
 
-	hid_write(handle, buf, 8);
+  hid_write(handle, buf, 8);
   res = 0;
   while (0 == res) {
     res = hid_read(handle, buf, 8);
