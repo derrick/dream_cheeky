@@ -1,5 +1,7 @@
 # Dream Cheeky
 
+Make your Dream Cheeky USB Device do something cool.
+
 World, the time has come to PUSH THE BUTTON!
 
 ## Support
@@ -8,11 +10,12 @@ The following Dream Cheeky USB Devices are supported `(vendor_id:product_id)`
 Big Red Button ``(1d34:000d)``  
 USB Fidget ``(1d34:0001)``  
 
-Please get in touch if you have any others that you would like added.
+Please get in touch if you have an unsupported Dream Cheeky devices.
 
 ## Usage
 
 ```ruby
+require 'rubygems'
 require 'dream_cheeky'
 
 DreamCheeky::BigRedButton.run do
@@ -35,6 +38,7 @@ end
 or
 
 ```ruby
+require 'rubygems'
 require 'dream_cheeky'
 require 'watir-webdriver'
 
