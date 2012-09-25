@@ -2,6 +2,15 @@
 
 World, the time has come to PUSH THE BUTTON!
 
+## Support
+The following Dream Cheeky USB Devices are supported `(vendor_id:product_id)`
+
+Big Red Button ``(1d34:000d)``  
+USB Fidget ``(1d34:0001)``  
+
+Please get in touch if you have any others that you would like added.
+
+## Usage
 
 ```ruby
 require 'dream_cheeky'
@@ -22,6 +31,8 @@ DreamCheeky::BigRedButton.run do
   end
 end
 ```
+
+or
 
 ```ruby
 require 'dream_cheeky'
@@ -46,5 +57,5 @@ end
 
 ## Requirements
 
-1. A Dream Cheeky Big Red Button(TM).  Don't have one?  http://dreamcheeky.com/big-red-button
+1. A supported Dream Cheeky USB Device. Example: http://dreamcheeky.com/big-red-button
 2. Mac OS X with Developer Tools installed. (Support for Linux and Windows is planned).
