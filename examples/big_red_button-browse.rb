@@ -3,9 +3,10 @@ require 'dream_cheeky'
 require 'watir-webdriver'
 
 DreamCheeky::BigRedButton.run do
-  browser = Watir::Browser.new
+  browser = ""
 
   open do
+    browser = Watir::Browser.new
     browser.goto 'devastatingexplosions.com'
   end
 
