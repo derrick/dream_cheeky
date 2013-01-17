@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
 require "dream_cheeky/version"
+require 'rbconfig'
 
 Gem::Specification.new do |s|
   s.name        = "dream_cheeky"
@@ -14,6 +15,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "dream_cheeky"
 
   s.files         = `git ls-files`.split("\n")
+
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.extensions    = ['ext/dream_cheeky/extconf.rb']
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
@@ -21,4 +23,5 @@ Gem::Specification.new do |s|
 
   # specify any dependencies here; for example:
   s.add_development_dependency "rspec"
+  s.add_dependency 'pkg-config'
 end
