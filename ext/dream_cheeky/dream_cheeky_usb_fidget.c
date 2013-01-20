@@ -1,4 +1,4 @@
-#include <dream_cheeky_big_red_button.h>
+#include <dream_cheeky_usb_fidget.h>
 
 
 static void deallocate(void * handle)
@@ -10,10 +10,9 @@ static VALUE allocate(VALUE klass)
 {
   hid_device * handle;
 
-  handle = hid_open(0x1d34, 0x000d, NULL);
-  /*handle = hid_open(0x1e54, 0x2030, NULL); // TypeMatrix*/
+  handle = hid_open(0x1d34, 0x0001, NULL);
   if(!handle) {
-    rb_exc_raise(rb_exc_new2(rb_eRuntimeError, "No Big Red Button Detected"));
+    rb_exc_raise(rb_exc_new2(rb_eRuntimeError, "No USB Fidget Detected"));
   }
 
   hid_set_nonblocking(handle, 1);
@@ -48,10 +47,10 @@ static VALUE get_current_state(VALUE self)
 }
 
 
-void Init_dream_cheeky_big_red_button()
+void Init_dream_cheeky_usb_fidget()
 {
-  VALUE cDreamCheekyBigRedButton = rb_define_class_under(mDreamCheeky, "BigRedButton", rb_cObject);
+  VALUE cDreamCheekyUsbFidget = rb_define_class_under(mDreamCheeky, "UsbFidget", rb_cObject);
 
-  rb_define_alloc_func(cDreamCheekyBigRedButton, allocate);
-  rb_define_method(cDreamCheekyBigRedButton, "get_current_state", get_current_state, 0);
+  rb_define_alloc_func(cDreamCheekyUsbFidget, allocate);
+  rb_define_method(cDreamCheekyUsbFidget, "get_current_state", get_current_state, 0);
 }
