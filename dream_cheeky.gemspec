@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Derrick Spell"]
   s.email       = ["derrick.spell@gmail.com"]
   s.homepage    = ""
-  s.summary     = "Ruby Inteface to Dream Cheeky(TM) USB Devices"
-  s.description = "Ruby Inteface to Dream Cheeky(TM) USB Devices"
+  s.summary     = "Ruby Interface to Dream Cheeky(TM) USB Devices"
+  s.description = "Ruby Interface to Dream Cheeky(TM) USB Devices"
 
   s.rubyforge_project = "dream_cheeky"
 
