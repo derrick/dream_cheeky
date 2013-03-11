@@ -1,0 +1,22 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+# Ignore other unneeded files.
+doc/
+*.swp
+*~
+.project
+.DS_Store
+
+# Ignore compilation products
+Makefile
+*.o
+*.so
+*.log
+dream_cheeky*.gem
+Gemfile.lock
+hidapi.c
