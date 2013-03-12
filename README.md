@@ -65,3 +65,13 @@ end
    
    Then, copy the file to /etc/udev/rules.d/99-dream_cheeky.rules (you probably would 
    need root priviles to copy it).
+
+## Maintainers
+
+* Derrick Spell (https://github.com/derrick)
+
+## Contributors
+
+* Gustavo Armagno (http://github.com/gusaaaaa) added Linux support - many thanks!
+* Matt Sephton (http://github.com/gingerbeardman) added the UsbFidget class.
+
