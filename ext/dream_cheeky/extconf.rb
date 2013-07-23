@@ -49,7 +49,7 @@ if RUBY_VERSION < "1.9.3"
   open("Makefile", "a") do |f|
     f.puts <<-EOS
 .m.o:
-  $(CC) $(INCFLAGS) $(CPPFLAGS) $(CFLAGS) $(COUTFLAG)$@ -c $<
-    EOS
+	$(CC) $(INCFLAGS) $(CPPFLAGS) $(CFLAGS) $(COUTFLAG) $@ -c $<
+	EOS
   end
 end
