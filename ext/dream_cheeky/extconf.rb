@@ -20,7 +20,7 @@ if RbConfig::CONFIG['host_os'] =~ /darwin/
       end
     end
   end
-  
+
   if have_framework('CoreFoundation')
     $LDFLAGS << " -ObjC -framework IOKit"
     FileUtils.cp('hidapi.c.mac', 'hidapi.c')
